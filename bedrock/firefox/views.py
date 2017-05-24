@@ -515,7 +515,7 @@ def new(request):
                 template = 'firefox/new/fx-lifestyle/you-do-you/scene2.html'
             elif experience == 'itsyourweb':
                 template = 'firefox/new/fx-lifestyle/its-your-web/scene2.html'
-            elif experience in ['batmfree', 'batmprivate', 'batmnimble', 'batmresist']:
+            elif experience in ['batmfree', 'batmprivate', 'batmnimble', 'batmresist', 'batm', 'batmb']:
                 template = 'firefox/new/batm/scene2.html'
             else:
                 template = 'firefox/new/scene2.html'
@@ -552,6 +552,10 @@ def new(request):
                 template = 'firefox/new/batm/nimble.html'
             elif experience == 'batmresist':
                 template = 'firefox/new/batm/resist.html'
+            elif experience == 'batm':
+                template = 'firefox/new/batm/machine-a.html'
+            elif experience == 'batmb':
+                template = 'firefox/new/batm/machine-b.html'
             else:
                 template = 'firefox/new/scene1.html'
         else:
